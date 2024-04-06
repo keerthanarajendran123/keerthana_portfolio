@@ -282,7 +282,7 @@ img {
 
 .skills__data {
     display: flex;
-    justify-content: center; /* Align images in the center */
+    justify-content: center; 
     align-items: center;
     position: relative;
     font-weight: var(--font-semi);
@@ -299,50 +299,33 @@ img {
 }
 
 /* ===== WORK =====*/
-.work__container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
+
+.work__item{
+    max-width: 38rem; 
+    margin-left: 45%;     
 }
 
-.work__item {
-    position: relative;
-    overflow: hidden;
-    width: calc(50% - 1rem); /* Two projects per row with gap */
+.card-text{
+    text-align: justify;
 }
 
-.work__img {
-    width: 100%;
-    display: block;
-    transition: transform 0.5s;
-}
-
-.work__overlay {
+.external-link {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    top: 10px;
+    right: 10px;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 5px;
+    border-radius: 50%;
+    transition: opacity 0.3s ease-in-out;
     opacity: 0;
-    transition: opacity 0.5s;
 }
 
-.work__title {
-    color: white;
-    font-size: 1.5rem;
-}
-
-.work__item:hover .work__img {
-    transform: scale(1.1);
-}
-
-.work__item:hover .work__overlay {
+.image-container:hover .external-link {
     opacity: 1;
 }
+
+
+
 /* ===== CONTACT =====*/
 .contact__input {
     width: 100%;
@@ -438,11 +421,10 @@ img {
         align-items: center;
         text-align: initial;
     }
-    .work__container {
+    /* .work__container {
         grid-template-columns: repeat(2, 1fr);
         column-gap: 2rem;
-        padding-top: 2rem;
-    }
+    } */
     .contact__form {
         width: 360px;
         padding-top: 2rem;
@@ -457,7 +439,7 @@ img {
         margin: 0;
     }
     .section {
-        padding-top: 4rem;
+        padding-top: 10rem;
         padding-bottom: 3rem;
     }
     .section-title {

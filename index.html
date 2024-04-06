@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-p7n3QKT64IyO92rWEy+H9oIj31K9u8bpoISyD9GnwZm9vMz+V8aEdh/PKkz/a+jm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" />
     <!-- =====BOX ICONS===== -->
     <link
@@ -64,7 +65,7 @@
 
           <a
             href="https://drive.google.com/file/d/1h5exiQsO71tFPEs1Hf3Go0ADtc1IUi6M/view?usp=drivesdk"
-            class="button"
+            class="button" target="_blank"
             >View Resume</a
           >
         </div>
@@ -72,12 +73,12 @@
         <div class="home__social">
           <a
             href="http://www.linkedin.com/in/keerthana-rajendran97"
-            class="home__social-icon"
+            class="home__social-icon" target="_blank"
             ><i class="bx bxl-linkedin"></i
           ></a>
           <a
             href="https://github.com/keerthanarajendran123"
-            class="home__social-icon"
+            class="home__social-icon" target="_blank"
             ><i class="bx bxl-github"></i
           ></a>
         </div>
@@ -188,41 +189,77 @@
         </div>
       </section>
       <!--===== WORK =====-->
-
-      <section class="work section" id="work">
-        <h2 class="section-title">Projects</h2>
-
-        <div class="work__container bd-grid">
-          <a href="https://blog-app-frontend7.netlify.app/" class="work__item">
-            <img src="blogapp.jpg" alt="" class="work__img" />
-            <div class="work__overlay">
-              <span class="work__title">Blog App</span>
-            </div>
-          </a>
-          <a
-            href="https://shopping-app-website97.netlify.app/"
-            class="work__item"
-          >
-            <img src="e-commerce1.jpg" alt="" class="work__img" />
-            <div class="work__overlay">
-              <span class="work__title">E-commerce</span>
-            </div>
-          </a>
-          <a href="https://polite-druid-a752f6.netlify.app/" class="work__item">
-            <img src="work3.jpg" alt="" class="work__img" />
-            <div class="work__overlay">
-              <span class="work__title">Chat App</span>
-            </div>
-          </a>
-          <a href="https://blood-bank-frontend97.netlify.app/" class="work__item">
-            <img src="banner1.jpg" alt="" class="banner1__img" />
-            <div class="work__overlay">
-              <span class="work__title">Blood Bank</span>
-            </div>
-          </a>
-        </div>
-      </section>
-
+    
+    <section class="work section" id="work">
+      <h2 class="section-title">Projects</h2>
+      <div class="row row-cols-1 row-cols-md-2 g-4 ">
+          <div class="col">
+              <div class="card work__item" style="height: 600px;">
+                  <div class="image-container">
+                      <img src="blogapp.jpg" class="card-img-top" style="height: 200px; object-fit: cover;width: 500px; " alt="Blog App">
+                      <a href="https://blog-app-frontend7.netlify.app/" class="external-link" target="_blank">
+                          <i class='bx bx-link-external'></i>
+                      </a>
+                  </div>
+                  <div class="card-body">
+                      <h5 class="card-title" style="font-size: larger;">Blog App</h5>
+                      <p class="card-text">This blog app is a web application designed to allow users to create, publish, and manage their own blog posts, providing a platform for sharing thoughts, ideas, and experiences with others.</p><br>
+                      <p class="card-text"><b>TECH STACK:</b>Reactjs,Nodejs,Expressjs,MongoDB</p><br>
+                      <a href="https://github.com/keerthanarajendran123/blog-app-frontend" class="button" target="_blank">view code</a>
+                  </div>
+              </div>
+          </div>
+          <div class="col">
+              <div class="card work__item" style="height: 600px;">
+                  <div class="image-container">
+                      <img src="e-commerce1.jpg" class="card-img-top" style="height: 200px;width:200%; object-fit: cover;" alt="e-commerce1">
+                      <a href="https://shopping-app-website97.netlify.app/" class="external-link" target="_blank">
+                          <i class='bx bx-link-external'></i>
+                      </a>
+                  </div>
+                  <div class="card-body">
+                      <h5 class="card-title" style="font-size: larger;">E-commerce</h5>
+                      <p class="card-text">This E-commerce app facilitates online shopping with secure payment options, enabling users to make purchases and allows admin functionalities for managing products, orders, and transactions.</p><br>
+                      <p class="card-text"><b>TECH STACK:</b>Reactjs,Nodejs,Expressjs,MongoDB</p><br>
+                      <a href="https://github.com/keerthanarajendran123/client" class="button" target="_blank">view code</a>
+                  </div>
+              </div>
+          </div>
+          <div class="col">
+              <div class="card work__item" style="height: 600px;">
+                  <div class="image-container">
+                      <img src="work3.jpg" class="card-img-top" style="height: 200px;width: 200%; object-fit: cover;" alt="chat_img">
+                      <a href="https://polite-druid-a752f6.netlify.app/" class="external-link" target="_blank">
+                          <i class='bx bx-link-external'></i>
+                      </a>
+                  </div>
+                  <div class="card-body">
+                      <h5 class="card-title" style="font-size: larger;">Chat App</h5>
+                      <p class="card-text">This Chat App enables real-time communication between users through text messages, fostering seamless and interactive conversations.</p><br>
+                      <p class="card-text"><b>TECH STACK:</b>Reactjs,Nodejs,Expressjs,MongoDB,socket.io</p><br>
+                      <a href="https://github.com/keerthanarajendran123/frontend" class="button" target="_blank">view code</a>
+                  </div>
+              </div>
+          </div>
+          <div class="col">
+              <div class="card work__item" style="height: 600px;">
+                  <div class="image-container">
+                      <img src="banner1.jpg" class="card-img-top" style="height: 200px;width: 200%; object-fit: cover;" alt="banner1__img">
+                      <a href="https://blood-bank-frontend97.netlify.app/" class="external-link" target="_blank">
+                          <i class='bx bx-link-external'></i>
+                      </a>
+                  </div>
+                  <div class="card-body">
+                      <h5 class="card-title" style="font-size: larger;">Blood Bank</h5>
+                      <p class="card-text">This Blood Bank System, facilitates efficient state management for seamless tracking and management of blood donations and requests.</p><br>
+                      <p class="card-text"><b>TECH STACK:</b>Reactjs,Redux,Nodejs,Expressjs,MongoDB</p><br>
+                      <a href="https://github.com/keerthanarajendran123/blood-bank-client" class="button" target="_blank">view code</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  
       <!--===== CONTACT =====-->
       <section class="contact section" id="contact">
         <h2 class="section-title">Contact</h2>
@@ -261,13 +298,10 @@
 
     <!--===== FOOTER =====-->
     <footer class="footer">
-      <p class="footer__title">Marlon</p>
+      <p class="footer__title">keerthana</p>
       <div class="footer__social">
-        <a href="#" class="footer__icon"><i class="bx bxl-facebook"></i></a>
-        <a href="#" class="footer__icon"><i class="bx bxl-instagram"></i></a>
-        <a href="#" class="footer__icon"><i class="bx bxl-twitter"></i></a>
-      </div>
-      <p class="footer__copy">&#169; CodeCraftedWeb. All rights reserved</p>
+        <a href="http://www.linkedin.com/in/keerthana-rajendran97"  class="footer__icon" target="_blank"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://github.com/keerthanarajendran123"  class="footer__icon" target="_blank"><i class="bx bxl-github"></i></a>
     </footer>
 
     <!--===== SCROLL REVEAL =====-->
