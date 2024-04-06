@@ -301,8 +301,12 @@ img {
 /* ===== WORK =====*/
 
 .work__item{
-    max-width: 38rem; 
+    max-width: 35rem; 
     margin-left: 45%;     
+}
+
+.image-container {
+    position: relative;
 }
 
 .card-text{
